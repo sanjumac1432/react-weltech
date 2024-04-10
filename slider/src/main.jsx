@@ -11,9 +11,10 @@ import { Loginwithformik } from './loginwithformik.jsx'
 import { Formvalidation } from './formvalidation.jsx'
 import { Univercityfrom } from './univercityfrom.jsx'
 import { Validation } from './selfvalidation.jsx'
+import { Grocery } from './grocery.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Validation />
+    <Grocery />
   </React.StrictMode>,
 )
