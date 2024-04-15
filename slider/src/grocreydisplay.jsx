@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export const Grocreydisplay = (props) => {
 
@@ -13,7 +13,9 @@ export const Grocreydisplay = (props) => {
      props.items.map((item, index)=>{
 
       return (
-        <div key={index}>{item}  <button>delete</button></div>
+        <div key={index}>{item}  <button onClick={()=>{
+          props.delete(index)
+        }}>delete</button></div>
       )
        })
 

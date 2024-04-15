@@ -11,6 +11,8 @@ export const Grocery = () => {
     let item = [...items];
     item.push(listdata);
     setitems(item);
+    
+    
   }
 
 
@@ -19,6 +21,14 @@ export const Grocery = () => {
     setlistdata(e.target.value);
 
   };
+
+  const deleteitem = (index)=>{
+
+    let p = [...items];
+    p.splice(index, 1)
+    setitems(p);
+
+  }
 
   return (
     <>
@@ -29,7 +39,7 @@ export const Grocery = () => {
       <input type="text" placeholder="add item ..." onChange={listitem} />
       <button onClick={handleSubmit}>+</button>
 
-      {<Grocreydisplay items={items} />}
+      {<Grocreydisplay items={items} delete= {deleteitem} />}
     </>
   );
 };

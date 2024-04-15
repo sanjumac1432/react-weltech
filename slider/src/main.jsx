@@ -12,6 +12,7 @@ import { Formvalidation } from './formvalidation.jsx'
 import { Univercityfrom } from './univercityfrom.jsx'
 import { Validation } from './selfvalidation.jsx'
 import { Grocery } from './grocery.jsx'
+import { Perentcomponent } from './perentcomponent.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
