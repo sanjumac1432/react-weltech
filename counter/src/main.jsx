@@ -9,6 +9,7 @@ import { Birthday } from './birthday.jsx'
 import { Card } from './card.jsx'
 import { Displaydata } from './displaydata.jsx'
 import { Validate } from './Validation.jsx'
+import { W3school } from './W3school.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

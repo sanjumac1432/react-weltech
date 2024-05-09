@@ -13,9 +13,24 @@ import { Univercityfrom } from './univercityfrom.jsx'
 import { Validation } from './selfvalidation.jsx'
 import { Grocery } from './grocery.jsx'
 import { Perentcomponent } from './perentcomponent.jsx'
+import { W3school } from './W3school.jsx'
+import { BrowserRouter } from 'react-router-dom'
+import { Crudewithapi } from './crudewithapi.jsx'
+import { ReduxCounter } from './reduxcounter.jsx'
+import {Provider}   from 'react-redux'
+import store from './store/store.js'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Grocery />
+    <BrowserRouter>
+
+<Provider store={store}>
+<ReduxCounter/>
+</Provider>
+
+ 
+    </BrowserRouter>
+
   </React.StrictMode>,
 )
